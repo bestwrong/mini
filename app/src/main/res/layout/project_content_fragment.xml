@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    tools:context="com.example.a99474.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="50%"
+        app:layout_widthPercent="50%">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_dark_blue">
+
+            <Button
+                android:id="@+id/btn_design"
+                android:layout_width="90dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_bold"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="设计工程"
+                android:textColor="@color/bg_dark_blue"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_origin"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_transparent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="官方工程"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fileContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_dark_blue"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_open_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建工程" />
+
+            <Button
+                android:id="@+id/btn_new_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开工程" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

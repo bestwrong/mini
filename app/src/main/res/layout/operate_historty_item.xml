@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/op_item_image"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="2%"
+        app:layout_widthPercent="10%"
+        app:srcCompat="@mipmap/ic_launcher_round" android:contentDescription="TODO"/>
+
+    <TextView
+        android:id="@+id/op_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/op_item_image"
+        android:layout_toRightOf="@+id/op_item_image"
+        tool:text="这是第一次测试的工程" />
+
+    <TextView
+        android:id="@+id/op_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="5dp"
+        tool:text="操作时间:2018-4-23 18:00:00" />
+
+
+</android.support.percent.PercentRelativeLayout>
